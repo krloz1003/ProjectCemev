@@ -1,0 +1,7 @@
+paciente_homepage:
+    path:     /
+    defaults: { _controller: PacienteBundle:Default:index }
+
+paciente_nuevo:
+    pattern:  /paciente/paciente_nuevo
+    defaults: { _controller: PacienteBundle:Default:formulario}

@@ -1,0 +1,3 @@
+hospital_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: HospitalBundle:Default:index }
