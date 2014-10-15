@@ -29,8 +29,6 @@ class Ingreso
     private $folioIngreso;    
 
     /**
-     * @var string
-     *
      * @ORM\ManyToOne(targetEntity="TrabSoc\PacienteBundle\Entity\Paciente", inversedBy="ingreso", cascade={"persist"})
      */
     private $paciente;
@@ -186,7 +184,7 @@ class Ingreso
      *
      * @param TrabSoc\PacienteBundle\Entity\Paciente $paciente
      */
-    public function setPaciente(\TrabSoc\PacienteBundle\Entity\Paciente $paciente = NULL)
+    public function setPaciente(\TrabSoc\PacienteBundle\Entity\Paciente $paciente)
     {
         $this->paciente = $paciente;
     
