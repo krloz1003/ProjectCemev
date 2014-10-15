@@ -28,12 +28,10 @@ class DefaultController extends Controller
         $form = $this->createForm(new PacienteType(), $paciente);
 
         if ($request->getMethod() == 'POST')
-        {
-        	echo "Entro";
+        {        	
         	$form->bind($this->getRequest());
 			if($form->isValid())
-			{
-				echo "Paso la validación";
+			{				
 				//$ingreso=$form->getData();
 				$em = $this->getDoctrine()->getManager();
 				$em->persist($paciente);
