@@ -1,0 +1,15 @@
+demo:
+    resource: "@DemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+hospital:
+    resource: "@HospitalBundle/Resources/config/routing.yml"
+    prefix:   /
+
+location:
+    resource: "@LocationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+paciente:
+    resource: "@PacienteBundle/Resources/config/routing.yml"
+    prefix:   /
